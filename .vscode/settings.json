@@ -1,0 +1,10 @@
+{
+    "editor.quickSuggestions": {
+        "other": true,
+        "comments": false,
+        "strings": true
+    },
+    "html.suggest.html5": true,
+    "emmet.triggerExpansionOnTab": true,
+    "emmet.showExpandedAbbreviation": "always"
+}

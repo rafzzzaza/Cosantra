@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cosantra</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="site-header">
+        <nav class="floating-nav" aria-label="Navigasi utama">
+            <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="main-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span class="sr-only">Buka menu</span>
+            </button>
+
+            <div class="nav-menu" id="main-menu">
+                <a href="#home">Home</a>
+                <a href="#tentang" aria-current="page">Tentang</a>
+                <a href="#fitur">Fakta Sejarah</a>
+                <a href="#Simpulan">Simpulan</a>
+                
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero section -->
+         
+        <section class="hero" id="home" aria-labelledby="hero-title">
+            <p class="eyebrow">Selamat datang di Cosantra</p>
+            <h1 id="hero-title">Prof. Dr. K.H Nasarudin Umar, M.A.</h1>
+            <p>Informasi Mengenai Para Tokoh lingkungan</p>
+        </section>
+
+        <!-- end Hero section -->
+
+        <section class="content-section page-section" id="tentang" aria-labelledby="fitur-title">
+            <h2 id="tentang-title">Tentang</h2>
+        </section>
+        <section class="content-section page-section" id="fitur" aria-labelledby="Simpulan-title">
+            <h2 id="fitur-title">Fakta Sejarah</h2>
+        </section>
+        <section class="content-section page-section" id="Simpulan" aria-labelledby="Simpulan-title">
+            <h2 id="Simpulan-title">Simpulan</h2>
+        </section>
+    </main>
+    <footer></footer>
+    <script src="script.js"></script>
+</body>
+</html>
