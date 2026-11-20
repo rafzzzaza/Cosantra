@@ -26,9 +26,9 @@ body {
     z-index: 10;
     display: flex;
     justify-content: center;
-    top: 1.5rem;
-    right: 1.25rem;
-    left: 1.25rem;
+    top: 24px;
+    right: 20px;
+    left: 20px;
 }
 
 .floating-nav {
@@ -36,27 +36,27 @@ body {
     align-items: center;
     width: fit-content;
     max-width: 100%;
-    min-height: 4.25rem;
+    min-height: 68px;
     margin: 0 auto;
-    padding: 0.55rem 0.7rem;
+    padding: 8.8px 11.2px;
     border: 1px solid rgba(255, 255, 255, 0.8);
     border-radius: 999px;
     background: rgba(255, 255, 255, 0.82);
-    box-shadow: 0 1.5rem 3rem rgba(39, 67, 48, 0.14);
+    box-shadow: 0 24px 48px rgba(39, 67, 48, 0.14);
     backdrop-filter: blur(18px);
 }
 
 .nav-menu {
     display: flex;
-    gap: 0.35rem;
+    gap: 5.6px;
     width: auto;
 }
 
 .nav-menu a {
-    padding: 0.75rem 1rem;
+    padding: 12px 16px;
     border-radius: 999px;
     color: #526158;
-    font-size: 0.9rem;
+    font-size: 14.4px;
     font-weight: 500;
     text-decoration: none;
     transition: color 180ms ease, background-color 180ms ease;
@@ -93,25 +93,26 @@ body {
 .hero {
     position: relative;
     display: grid;
-    grid-template-columns: minmax(17rem, 1fr) minmax(18rem, 1.4fr) minmax(13rem, 0.9fr);
+    grid-template-columns: minmax(272px, 1fr) minmax(288px, 1.4fr) minmax(208px, 0.9fr);
     align-items: center;
+    width: 100%;
     min-height: 100vh;
-    max-width: 1600px;
+    max-width: none;
     margin: 0 auto;
-    padding: 8rem clamp(2rem, 5vw, 6rem) 4rem;
+    padding: 128px clamp(32px, 5vw, 96px) 64px;
     overflow: hidden;
     isolation: isolate;
 }
 
 .page-section {
-    scroll-margin-top: 6rem;
+    scroll-margin-top: 96px;
 }
 
 .hero-lines {
     position: absolute;
     z-index: -1;
-    width: 42rem;
-    height: 42rem;
+    width: 672px;
+    height: 672px;
     border: 1px solid rgba(48, 93, 76, 0.16);
     border-radius: 50%;
     pointer-events: none;
@@ -120,24 +121,24 @@ body {
 .hero-lines::before,
 .hero-lines::after {
     position: absolute;
-    inset: 1.5rem;
+    inset: 24px;
     border: inherit;
     border-radius: inherit;
     content: '';
 }
 
 .hero-lines::after {
-    inset: 3rem;
+    inset: 48px;
 }
 
 .hero-lines-left {
     top: 7%;
-    left: -31rem;
+    left: -496px;
 }
 
 .hero-lines-right {
-    right: -25rem;
-    bottom: -17rem;
+    right: -400px;
+    bottom: -272px;
 }
 
 .hero-title {
@@ -146,9 +147,9 @@ body {
 }
 
 .eyebrow {
-    margin: 0 0 1.2rem;
+    margin: 0 0 19.2px;
     color: #5b7d70;
-    font-size: 0.72rem;
+    font-size: 11.52px;
     font-weight: 700;
     letter-spacing: 0.16em;
     text-transform: uppercase;
@@ -158,23 +159,23 @@ h1 {
     margin: 0;
     color: #17513d;
     font-family: 'Playfair Display', Georgia, serif;
-    font-size: clamp(3rem, 6vw, 7rem);
+    font-size: clamp(48px, 6vw, 112px);
     line-height: 0.89;
     letter-spacing: -0.08em;
 }
 
 .hero-author {
-    margin: 2rem 0 0;
+    margin: 32px 0 0;
     color: #17513d;
     font-family: 'Playfair Display', Georgia, serif;
-    font-size: clamp(1.2rem, 2vw, 2rem);
+    font-size: clamp(19.2px, 2vw, 32px);
     font-style: italic;
     line-height: 1.05;
 }
 
 .hero-author span {
     font-family: 'DM Sans', sans-serif;
-    font-size: 0.65rem;
+    font-size: 10.4px;
     font-style: normal;
     letter-spacing: 0.13em;
     text-transform: uppercase;
@@ -200,14 +201,14 @@ h1 {
 
 .hero-info {
     align-self: end;
-    padding: 0 0 4rem 1rem;
+    padding: 0 0 64px 16px;
 }
 
 .hero-info > p {
-    max-width: 16rem;
-    margin: 0 0 2.5rem;
+    max-width: 256px;
+    margin: 0 0 40px;
     color: #244e40;
-    font-size: 0.9rem;
+    font-size: 14.4px;
     line-height: 1.65;
 }
 
@@ -215,21 +216,21 @@ h1 {
     display: grid;
     min-height: 100vh;
     place-content: center;
-    padding: 7rem 1.5rem 4rem;
+    padding: 112px 24px 64px;
 }
 
 .content-section h2 {
     margin: 0;
     color: #17513d;
     font-family: 'Playfair Display', Georgia, serif;
-    font-size: clamp(2rem, 5vw, 4rem);
+    font-size: clamp(32px, 5vw, 64px);
 }
 
 @media (max-width: 900px) {
     .hero {
-        grid-template-columns: 5rem minmax(13rem, 0.9fr) minmax(15rem, 1.2fr);
-        padding-right: 2rem;
-        padding-left: 2rem;
+        grid-template-columns: 80px minmax(208px, 0.9fr) minmax(240px, 1.2fr);
+        padding-right: 32px;
+        padding-left: 32px;
     }
 
     .hero-info {
@@ -238,7 +239,7 @@ h1 {
     }
 
     .hero-info > p {
-        max-width: 23rem;
+        max-width: 368px;
     }
 
     .hero-person {
@@ -248,22 +249,22 @@ h1 {
 
 @media (max-width: 640px) {
     .site-header {
-        top: 0.85rem;
-        right: 0.85rem;
-        left: 0.85rem;
+        top: 13.6px;
+        right: 13.6px;
+        left: 13.6px;
     }
 
     .floating-nav {
         width: 100%;
         justify-content: flex-start;
-        padding-left: 1.15rem;
+        padding-left: 18.4px;
     }
 
     .nav-toggle {
         display: block;
-        width: 2.6rem;
-        height: 2.6rem;
-        padding: 0.55rem;
+        width: 41.6px;
+        height: 41.6px;
+        padding: 8.8px;
         border: 0;
         border-radius: 50%;
         background: #d6e5dc;
@@ -279,17 +280,17 @@ h1 {
 
     .nav-menu {
         position: absolute;
-        top: calc(100% + 0.5rem);
-        right: 1rem;
-        left: 1rem;
+        top: calc(100% + 8px);
+        right: 16px;
+        left: 16px;
         display: none;
         flex-direction: column;
         gap: 0;
-        padding: 0.65rem;
-        border-radius: 1.25rem;
+        padding: 10.4px;
+        border-radius: 20px;
         border: 1px solid rgba(23, 81, 61, 0.14);
         background: rgba(232, 237, 244, 0.96);
-        box-shadow: 0 1rem 2rem rgba(23, 81, 61, 0.12);
+        box-shadow: 0 16px 32px rgba(23, 81, 61, 0.12);
     }
 
     .nav-menu.is-open {
@@ -297,7 +298,7 @@ h1 {
     }
 
     .nav-menu a {
-        padding: 0.8rem 1rem;
+        padding: 12.8px 16px;
     }
 
     .hero {
@@ -305,7 +306,7 @@ h1 {
         grid-template-columns: 1fr 1.4fr;
         align-items: start;
         min-height: 100svh;
-        padding: 7rem 1.25rem 3rem;
+        padding: 112px 20px 48px;
     }
 
     .hero-title {
@@ -313,15 +314,15 @@ h1 {
     }
 
     h1 {
-        font-size: clamp(2.7rem, 12vw, 5rem);
+        font-size: clamp(43.2px, 12vw, 80px);
     }
 
     .hero-person {
         grid-column: 1 / -1;
         grid-row: 2;
         width: 100%;
-        height: 27rem;
-        margin: -1rem 0 0;
+        height: 432px;
+        margin: -16px 0 0;
     }
 
     .hero-info {
@@ -331,8 +332,8 @@ h1 {
     }
 
     .hero-info > p {
-        max-width: 25rem;
-        margin-top: 1rem;
+        max-width: 400px;
+        margin-top: 16px;
     }
 
 }
