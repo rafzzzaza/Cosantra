@@ -183,15 +183,16 @@ h1 {
 
 .hero-person {
     align-self: end;
-    height: min(74vh, 700px);
-    margin-left: 0;
+    width: 170%;
+    height: auto;
+    margin-left: -35%;
 }
 
 .person-image {
     display: block;
     width: 100%;
-    height: 100%;
-    object-fit: cover;
+    height: auto;
+    object-fit: contain;
     object-position: center top;
     filter: saturate(0.7) contrast(0.95);
     mix-blend-mode: multiply;
@@ -201,15 +202,42 @@ h1 {
 
 .hero-info {
     align-self: end;
+    position: relative;
+    z-index: 3;
     padding: 0 0 64px 16px;
 }
 
 .hero-info > p {
+    position: relative;
+    padding: 28px 20px 22px;
+    border-radius: 20px;
+    background: rgba(232, 237, 244, 0.88);
     max-width: 256px;
     margin: 0 0 40px;
     color: #244e40;
     font-size: 14.4px;
     line-height: 1.65;
+}
+
+.hero-info > p::before,
+.hero-info > p::after {
+    position: absolute;
+    color: #5b7d70;
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: 52px;
+    line-height: 0.7;
+}
+
+.hero-info > p::before {
+    top: 10px;
+    left: 14px;
+    content: '\201C';
+}
+
+.hero-info > p::after {
+    right: 14px;
+    bottom: 4px;
+    content: '\201D';
 }
 
 .content-section {
@@ -243,6 +271,7 @@ h1 {
     }
 
     .hero-person {
+        width: 100%;
         margin-left: 0;
     }
 }
@@ -321,7 +350,7 @@ h1 {
         grid-column: 1 / -1;
         grid-row: 2;
         width: 100%;
-        height: 432px;
+        height: auto;
         margin: -16px 0 0;
     }
 
